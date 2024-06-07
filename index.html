@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colección de Herramientas</title>
+    <!-- Importamos estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Importamos scripts de JavaScript -->
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <header>
+                <h2>Colección de Herramientas</h2>
+                <p>Descubre nuestra variedad de herramientas industriales de alta calidad.</p>
+            </header>
+            <button class="filters-button">Filtros y Ordenar</button>
+            <div class="filters">
+                <div>
+                    <label for="sortBy">Ordenar por:</label>
+                    <select id="sortBy">
+                        <option>Ordenar por</option>
+                        <option value="name-asc">Nombre, ASC</option>
+                        <option value="name-desc">Nombre, DESC</option>
+                    </select>
+                </div>
+                <div>
+                    <details>
+                        <summary>Características</summary>
+                        <ul>
+                            <li>
+                                <label for="silence">
+                                    <input type="checkbox" id="silence"> Silencioso
+                                </label>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+                <div>
+                    <details>
+                        <summary>Especificaciones</summary>
+                        <strong>Peso (Kg)</strong> 
+                        <div>
+                            <label for="weightFrom">Desde:</label>
+                            <input type="number" id="weightFrom" min="0" max="5" placeholder="Desde">
+                        </div>
+                        <div>
+                            <label for="priceTo">Hasta:</label>
+                            <input type="number" id="weightTo" min="0" max="5" placeholder="Hasta">
+                        </div>
+                    </details>
+                </div>
+                <div>
+                    <details>
+                        <summary>Ventajas</summary>
+                        <!-- Ligero y Rudo -->
+                        <ul>
+                            <li>
+                                <label for="light">
+                                    <input type="checkbox" id="light"> Ligero
+                                </label>
+                            </li>
+                            <li>
+                                <label for="rugged">
+                                    <input type="checkbox" id="rugged"> Rudo
+                                </label>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div id="productsContainer" class="products">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
